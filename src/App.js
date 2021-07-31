@@ -1,7 +1,8 @@
 import React, {useRef} from "react";
 import './App.css';
 import { useReactToPrint } from 'react-to-print';
-import {PrintComponent} from "./printComponent";
+//import {PrintComponent} from "./printComponent";
+import QuotationDetails from "./quotation";
 
 const App = () => {
 
@@ -12,7 +13,7 @@ const App = () => {
 
   return (
     <div className="App">
-        <PrintComponent ref={ componentRef}/>
+        <QuotationDetails ref={ componentRef}/>
         <button onClick={handlePrint}>Imprimer !</button>
     </div>
   );

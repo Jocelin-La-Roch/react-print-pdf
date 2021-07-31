@@ -1,0 +1,125 @@
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+@import "../bootstrap-extended/mixins";
+
+// Load variable overrides
+@import "../core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+// dashboard-analytics
+
+.bg-blue{
+  background-color:#ACC4E1!important;
+}
+.bg-grey{
+  background-color: #788A92!important;
+}
+.bg-green{
+  background-color:#4CC461!important;
+}
+.color-green{
+  color:#4CC461!important;
+
+}
+.background-transparent{
+  background-color: transparent!important;
+}
+.bg-image-orange{
+  background-image:linear-gradient(to right top, #DF3405, #FD473C, #F32F59, #DF3405);
+}
+.bg-image-blue{
+  background-image:linear-gradient(to right top, #C3C3C3,#546E7A ,#546E7A, #C3C3C3);
+}
+.card-height{
+  height: 170px!important;
+}
+
+.bg-image-green{
+/*  background-image:linear-gradient(to right top, #05BDD5, #0FC2D1 ,#03C2CE, #00D3C7);*/
+  background-image:linear-gradient(to right top, #43B4FA, #2F8BE6 ,#43B4FA, #2F8BE6);
+
+}
+.bg-image-g{
+  background-image:linear-gradient(to right top, #DADBF4, #DADBF4 ,#DADBF4, #DADBF4);
+}
+.back-image-g{
+  background-image:linear-gradient(to right top, #8440A1, #904BAB ,#B394C8, #B394C8);
+
+}
+.bg-image-pink{
+  background-image:linear-gradient(to right top, #02B8E0, #01C8CB ,#22CD7C, #22CD7C);
+}
+
+
+.bg-orange{
+  background-color: #EE8C42;
+}
+.bg-pink{
+  background-color: #ED5582;
+}
+.bg-yellow{
+  background-color: #FFCE45;
+}
+.sales-card {
+  // img left
+  .img-left {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  // img right
+  .img-right {
+    width: 175px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  // backgound color to card
+  &.bg-analytics {
+    background: linear-gradient(118deg, rgba($primary, 1), rgba($primary, 0.7));
+    .avatar {
+      margin-bottom: 2rem;
+      svg {
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+}
+
+table.dashboard-table {
+  tr th,
+  tr td {
+    &:first-child {
+      padding-left: 2rem;
+    }
+    &:last-child {
+      padding-right: 2rem;
+    }
+  }
+  td {
+    padding: 0.75rem;
+  }
+}
+
+.support-tracker-card{
+  .apexcharts-canvas{
+    top: -40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sales-card {
+    // img left, img-right
+    .img-left,
+    .img-right {
+      width: 140px;
+    }
+  }
+}
