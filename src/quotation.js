@@ -2,8 +2,9 @@ import React from "react"
 //import {Card} from 'reactstrap';
 
 import './assets/scss/pages/users.scss';
+import {Card} from "reactstrap";
 
-const logoCI = require('./LogoCI.png');
+import logoCI from './LogoCI.png';
 
 class QuotationDetails extends React.Component {
      
@@ -11,12 +12,12 @@ render() {
     
     return (
 
-        <div className="px-4 pb-4">
+        <Card className="px-4 pb-4">
           <div className="row justify-content-between align-items-center">
-            <div className="col col-12 col-md-6 col-lg-4 overflow-hidden text-md-left text-lg-left text-center">
-              <img className='w-full ' style={{margin: "15px 0px 15px 5px", height: "50px"}} src="./logo.svg" alt="Digital Trade logo"/>
+            <div className="col col-md-6 col-lg-4 overflow-hidden text-md-left text-lg-left text-left">
+              <img className='w-full ' style={{margin: "15px 0px 15px 5px", height: "50px", width: "170px"}} src={logoCI} alt="Digital Trade logo"/>
             </div>
-            <div className="col col-12 col-md-6 col-lg-4 text-md-right text-lg-right text-center">
+            <div className="col col-md-6 col-lg-4 text-md-right text-lg-right text-right">
               <h2>Cotation</h2>
               <h4 className='text-black-50'>#HU45LO</h4>
             </div>
@@ -24,7 +25,7 @@ render() {
 
 
           <div className="row">
-            <div className="col col-12 text-center text-md-left">
+            <div className="col col-12 text-left text-md-left">
               <ul className="p-0 list-style-none " style={{marginTop: "15px"}} >
                 <li className='my-1'>40 Rue Paul Langevin, Abidjan
                 </li>
@@ -37,12 +38,12 @@ render() {
           </div>
 
           <div className="row">
-            <div className="col col-12 col-md-7 offset-md-5 text-center text-md-left mt-5 mb-4">
+            <div className="col col-12 col-md-7 offset-md-5 text-right text-md-left mt-5 mb-4">
               <p className="text-black">
                 18 jun 2021
               </p>
               <p className="text-black mt-1">
-                A
+                A ABIDJAN
               </p>
               <p className="text-black mt-2">
                 Richard bona
@@ -188,7 +189,7 @@ render() {
               <div className="col col-12 px-5 mt-3">
                 <p>Cette operation inclut :</p>
                 <ul className='list-style-square'>
-                      <li>name</li>
+                      <li>taxes</li>
                 </ul>
               </div>
             </div>
@@ -221,7 +222,7 @@ render() {
             </div>
           </div>
 
-        </div>
+        </Card>
     )
   }
 }

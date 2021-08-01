@@ -1,5 +1,4 @@
 import React, {useRef} from "react";
-import './App.css';
 import { useReactToPrint } from 'react-to-print';
 //import {PrintComponent} from "./printComponent";
 import QuotationDetails from "./quotation";
